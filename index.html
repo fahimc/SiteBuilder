@@ -8,9 +8,71 @@
 		<meta name="author" content="fahim.chowdhury" />
 		<!-- Date: 2013-02-19 -->
 		<script type="text/javascript" src="lib/com/fahimchowdhury/toolkitMax-v1002-compressed.js"></script>
+		<script type="text/javascript" src="src/util.js"></script>
+		<script type="text/javascript" src="src/main.js"></script>
+		<link type="text/css" rel="stylesheet"  href="resource/css/global.css"/>
 	</head>
-	<body>
+	<body class="hide">
+		<ul class="wrapper">
+			<li class="leftHolder">
+				<h1 class="names"><span id="groomName">Name</span>&
+				<br>
+				<span id="brideName">Name</span></h1>
+				<p id="mainTitle">
+					main title
+				</p>
+				<img id="mainImage" src="resource/image/main.jpg" />
+				<ul class="menu">
+					<li class="menuButton selected" onclick="changePage('homeContent',this)">
+						<p id="homeButton">
+							Home
+						</p>
+					</li>
+					<li class="menuButton" onclick="changePage('galleryContent',this)">
+						<p id="galleryButton" >
+							Gallery
+						</p>
+					</li>
+					<li class="menuButton" onclick="changePage('venueContent',this)">
+						<p id="venueButton" >
+							Venues
+						</p>
+					</li>
+					<li class="menuButton" onclick="changePage('contactContent',this)">
+						<p id="contactButton" >
+							Contact
+						</p>
+					</li>
+					<li class="clearBoth"></li>
+				</ul>
+			</li>
+			<li class="rightHolder">
+				<ul class="contentHolder">
+					<li class="content selected" id="homeContent">
+						<h1 class="contentTitle" id="homeTitle"> Welcome </h1>
+						<p id="homeCopy">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+						</p>
+					</li>
+					<li class="content disabled" id="galleryContent">
+						<h1 class="contentTitle" id="galleryTitle">Gallery</h1>
 
+					</li>
+					<li class="content disabled" id="venueContent">
+						<h1 class="contentTitle" id="venueTitle">Venue</h1>
+
+					</li>
+					<li class="content disabled" id="contactContent">
+						<h1 class="contentTitle" id="contactTitle">Contact</h1>
+						<iframe id="contactMap" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=E14+5AH&amp;aq=&amp;sll=51.504469,-0.016651&amp;sspn=0.065713,0.110378&amp;ie=UTF8&amp;hq=&amp;hnear=London+E14+5AH,+United+Kingdom&amp;t=m&amp;z=14&amp;ll=51.504462,-0.017454&amp;output=embed"></iframe>
+						<p id="contactAddress">
+							London Borough of Tower Hamlets<br>London<br>E14 5AH
+						</p>
+						</li>
+				</ul>
+			</li>
+			<li class="clearBoth"></li>
+		</ul>
 	</body>
 </html>
 
